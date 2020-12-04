@@ -1,21 +1,22 @@
-import './App.css';
+import { Component } from "react";
+import React from "react";
+import Texter from "./Text";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <div id="marquee">
-    <div>
-        <span>I LOVE U JAANU</span>
-    </div>
-    <div aria-hidden="true">
-        <span style={{fontcolor:"red"}}>I M SORRY JAANU</span>
-    </div>
-  <div aria-hidden="true">
-        <span>I LOVE U JAANU</span>
-    </div>
-</div>
-    </div>
-  );
+
+class App extends Component {
+
+  render() {
+    return (
+      <Router>
+        <Switch>
+        
+          <Route exact path="/"  component={Texter} />
+         
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;
