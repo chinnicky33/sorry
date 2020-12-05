@@ -33,8 +33,10 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 15vw;
-  height: 35vmin;
+  /* width: 15vw; */
+  width: 200px;
+  /* height: 35vmin; */
+  height: 75%;
   line-height: 200px;
   font-size: 50px;
   text-align: center;
